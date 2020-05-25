@@ -1,0 +1,2 @@
+CLIENT_SECRET=asdfadfasdf
+CLIENT_ID=asdfadsfadsfa

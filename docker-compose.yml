@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  service:
+    build: ./service
+    volumes:
+      - ./service:/usr/src/app
+    ports:
+      - 5111:5000
+    environment:
+      #FLASK_DEBUG: 1
+      FLASK_ENV: development
+      #FLASK_APP: app.py
+      WORK_ENV: DEV
+    command: bash -c "python microservice.py"
+    restart: unless-stopped
